@@ -1,8 +1,7 @@
 group:
-  - ai2_arc
-  - m_ai2_arc
+  - ai2_arc_m
   - ai2_arc_de
-task: arc_de_leolm
+task: arc_challenge_de_leolm
 dataset_path: LeoLM/ArcChallenge_de
 dataset_name: null
 output_type: multiple_choice
@@ -23,5 +22,3 @@ metric_list:
   - metric: acc_norm
     aggregation: mean
     higher_is_better: true
-
-
