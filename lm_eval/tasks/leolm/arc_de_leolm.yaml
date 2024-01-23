@@ -1,0 +1,24 @@
+group:
+  - ai2_arc_m
+  - ai2_arc_de
+task: arc_challenge_de_leolm
+dataset_path: LeoLM/ArcChallenge_de
+dataset_name: null
+output_type: multiple_choice
+dataset_kwargs: null
+training_split: null
+validation_split: validation
+test_split: test
+fewshot_split: validation
+should_decontaminate: true
+doc_to_decontamination_query: "Frage: {{question_de}}\nAntwort:"
+doc_to_text: "Frage: {{question_de}}\nAntwort:"
+doc_to_target: "{{choices.label.index(answerKey)}}"
+doc_to_choice: "{{choices_de.text}}"
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
