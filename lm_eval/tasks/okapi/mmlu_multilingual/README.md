@@ -34,7 +34,7 @@ Homepage: `https://github.com/nlp-uoregon/Okapi`
 
 #### Tasks
 
-- `hellaswag_{ar,bn,ca,da,de,es,eu,fr,gu,hi,hr,hu,hy,id,it,kn,ml,mr,ne,nl,pt,ro,ru,sk,sr,sv,ta,te,uk,vi}`
+- `mmlu_m_{ar,bn,ca,da,de,es,eu,fr,gu,hi,hr,hu,hy,id,it,kn,ml,mr,ne,nl,pt,ro,ru,sk,sr,sv,ta,te,uk,vi}`
 
 
 ### Checklist
