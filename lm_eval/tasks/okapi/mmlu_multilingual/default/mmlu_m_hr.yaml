@@ -1,0 +1,3 @@
+"dataset_name": "mmlu_hr"
+"include": "_default_multi_template_yaml"
+"task": "mmlu_m_hr"

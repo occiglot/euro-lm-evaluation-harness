@@ -1,0 +1,3 @@
+"dataset_name": "mmlu_id"
+"include": "_default_multi_template_yaml"
+"task": "mmlu_m_id"
