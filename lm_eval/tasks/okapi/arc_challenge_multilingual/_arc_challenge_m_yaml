@@ -1,0 +1,24 @@
+group:
+  - arc_challenge_multilingual
+
+dataset_path: malteos/m_arc
+dataset_kwargs: null
+output_type: multiple_choice
+training_split: train
+validation_split: validation
+test_split: test
+doc_to_text: "Question: {{question}}\nAnswer:"
+# sample does not contain answer indices so we need to use a helper variable:
+doc_to_target: "{% set keyToIdx = ({'A': 0, 'B': 1, 'C': 2, 'D': 3}) %}{{choices[keyToIdx[answerKey]]}}"
+doc_to_choice: "{{choices}}"
+should_decontaminate: true
+doc_to_decontamination_query: "Question: {{question}}\nAnswer:"
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0
