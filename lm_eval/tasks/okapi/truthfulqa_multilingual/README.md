@@ -34,8 +34,8 @@ All tasks are refactored from a [lm-evaluation-harness fork](https://github.com/
 #### Groups
 
 - truthfulqa_multilingual
-- truthful_m_{ar,bn,ca,da,de,es,eu,fr,gu,hi,hr,hu,hy,id,it,kn,ml,mr,ne,nl,pt,ro,ru,sk,sr,sv,ta,te,uk,vi}
-- truthful_m_{mc1,mc2}
+- truthfulqa_m_{ar,bn,ca,da,de,es,eu,fr,gu,hi,hr,hu,hy,id,it,kn,ml,mr,ne,nl,pt,ro,ru,sk,sr,sv,ta,te,uk,vi}
+- truthfulqa_m_{mc1,mc2}
 
 #### Tasks
 
