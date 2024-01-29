@@ -1,0 +1,7 @@
+"dataset_name": "truthfulqa_ml"
+"group":
+- "truthfulqa_multilingual"
+- "truthfulqa_m_ml"
+- "truthfulqa_m_mc2"
+"include": "_default_multi_template_mc2_yaml"
+"task": "truthfulqa_mc2_m_ml"

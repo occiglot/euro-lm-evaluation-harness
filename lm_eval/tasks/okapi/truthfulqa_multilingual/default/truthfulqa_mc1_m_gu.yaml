@@ -1,0 +1,7 @@
+"dataset_name": "truthfulqa_gu"
+"group":
+- "truthfulqa_multilingual"
+- "truthfulqa_m_gu"
+- "truthfulqa_m_mc1"
+"include": "_default_multi_template_mc1_yaml"
+"task": "truthfulqa_mc1_m_gu"
