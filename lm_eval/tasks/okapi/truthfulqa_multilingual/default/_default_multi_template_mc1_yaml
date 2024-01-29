@@ -1,6 +1,4 @@
 dataset_path: malteos/m_truthfulqa
-group:
-  - truthfulqa_multilingual
 test_split: null
 output_type: multiple_choice
 training_split: null
