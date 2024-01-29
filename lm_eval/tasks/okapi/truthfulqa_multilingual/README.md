@@ -25,9 +25,9 @@ Homepage: `https://github.com/nlp-uoregon/Okapi`
 }
 ```
 
-### Comment 
+### Comment
 
-All tasks are refactored from a [lm-evaluation-harness fork](https://github.com/laiviet/lm-evaluation-harness). The tasks are not based on the original Okapi dataset. 
+All tasks are refactored from a [lm-evaluation-harness fork](https://github.com/laiviet/lm-evaluation-harness). The tasks are not based on the original Okapi dataset.
 
 ### Groups and Tasks
 

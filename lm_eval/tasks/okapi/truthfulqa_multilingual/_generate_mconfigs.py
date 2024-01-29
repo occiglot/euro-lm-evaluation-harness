@@ -18,7 +18,7 @@ SAFE_PATH = str(os.path.dirname(__file__)) + "/default/"
 if __name__ == "__main__":
     for variation in VARIATIONS:
         for lang in tqdm(LANGS, desc=f"Generate truthfulqa_{variation}"):
-            # generate truthfulqa_gen 
+            # generate truthfulqa_gen
             yaml_dict = {
                 "dataset_name": f"truthfulqa_{lang}",
                 "task": f"truthfulqa_{variation}_m_{lang}",
