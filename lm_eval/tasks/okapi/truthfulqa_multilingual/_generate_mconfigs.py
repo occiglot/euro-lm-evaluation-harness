@@ -11,13 +11,12 @@ from lm_eval.logger import eval_logger
 LANGS = "ar,bn,ca,da,de,es,eu,fr,gu,hi,hr,hu,hy,id,it,kn,ml,mr,ne,nl,pt,ro,ru,sk,sr,sv,ta,te,uk,vi,zh".split(
     ","
 )
-
+VARIATIONS = ['mc1', 'mc2']
 
 SAFE_PATH = str(os.path.dirname(__file__)) + "/default/"
 
 if __name__ == "__main__":
-    variations = ['mc1', 'mc2']
-    for variation in variations:
+    for variation in VARIATIONS:
         for lang in tqdm(LANGS, desc=f"Generate truthfulqa_{variation}"):
             # generate truthfulqa_gen 
             yaml_dict = {
