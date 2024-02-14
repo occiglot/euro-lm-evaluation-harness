@@ -1,0 +1,20 @@
+"dataset_name": "mmlu_de"
+dataset_path: malteos/m_mmlu
+group:
+  - mmlu_multilingual_translated_prompt
+test_split: test
+dataset_kwargs:
+  trust_remote_code: True
+validation_split: validation
+training_split: train
+fewshot_split: validation
+output_type: multiple_choice
+doc_to_text: "Frage: {{question}}\nnAntwortmöglichkeiten:\nA) {{choices[0]}}\nB) {{choices[1]}}\nC) {{choices[2]}}\nD) {{choices[3]}}\nAntwort:"
+doc_to_target: "{{answer}}"
+doc_to_choice: ["A","B","C","D"]
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+
+"task": "mmlu_m_de_translated_prompt"

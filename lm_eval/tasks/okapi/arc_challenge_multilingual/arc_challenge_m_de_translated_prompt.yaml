@@ -1,0 +1,28 @@
+"dataset_name": "arc_de"
+group:
+  - arc_challenge_multilingual_translated_prompt
+
+dataset_path: malteos/m_arc
+dataset_kwargs: null
+output_type: multiple_choice
+training_split: train
+validation_split: validation
+test_split: test
+# like LeoLM: https://github.com/bjoernpl/lm-evaluation-harness-de/blob/mmlu_de/lm_eval/tasks/arc_de.py#L56
+doc_to_text: "Frage: {{question}}\nAntwort:"
+# sample does not contain answer indices so we need to use a helper variable:
+doc_to_target: "{% set keyToIdx = ({'A': 0, 'B': 1, 'C': 2, 'D': 3}) %}{{keyToIdx[answerKey]}}"
+doc_to_choice: "{{choices}}"
+should_decontaminate: true
+doc_to_decontamination_query: "Frage: {{question}}\nAntwort:"
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0
+
+"task": "arc_challenge_m_de_translated_prompt"

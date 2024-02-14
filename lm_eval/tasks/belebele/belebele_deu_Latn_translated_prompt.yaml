@@ -1,0 +1,22 @@
+"fewshot_split": "deu_Latn"
+group: belebele_translated_prompt
+dataset_path: facebook/belebele
+fewshot_config:
+  sampler: first_n
+output_type: multiple_choice
+should_decontaminate: true
+doc_to_decontamination_query: "{{question}}"
+doc_to_text: "Text: {{flores_passage}}\nFrage zum Text: {{question.strip()}}\nAntwortmöglichkeiten\nA: {{mc_answer1}}\nB: {{mc_answer2}}\nC: {{mc_answer3}}\nD: {{mc_answer4}}\nRichtige Antwort:"
+doc_to_choice: ["A", "B", "C", "D"]
+doc_to_target: "{{['1', '2', '3', '4'].index(correct_answer_num)}}"
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 0.0
+"task": "belebele_deu_Latn_translated_prompt"
+"test_split": "deu_Latn"
