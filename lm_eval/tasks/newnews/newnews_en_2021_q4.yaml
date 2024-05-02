@@ -1,0 +1,6 @@
+
+task: newnews_en_2021_q4
+dataset_name: en
+test_split: "2021_q4"
+
+include: _default_newnews_template_yaml

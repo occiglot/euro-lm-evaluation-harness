@@ -1,0 +1,6 @@
+
+task: newnews_es_2022_q3
+dataset_name: es
+test_split: "2022_q3"
+
+include: _default_newnews_template_yaml

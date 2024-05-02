@@ -1,0 +1,6 @@
+
+task: newnews_de_2022_q1
+dataset_name: de
+test_split: "2022_q1"
+
+include: _default_newnews_template_yaml

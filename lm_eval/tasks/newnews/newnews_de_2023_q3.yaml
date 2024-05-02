@@ -1,0 +1,6 @@
+
+task: newnews_de_2023_q3
+dataset_name: de
+test_split: "2023_q3"
+
+include: _default_newnews_template_yaml

@@ -1,0 +1,6 @@
+
+task: newnews_fr_2024_q1
+dataset_name: fr
+test_split: "2024_q1"
+
+include: _default_newnews_template_yaml
